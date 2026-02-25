@@ -11,9 +11,11 @@ import net.minecraft.potion.Potions
 import net.minecraft.recipe.Ingredient
 import org.slf4j.LoggerFactory
 
-object ExtendedCommandBlocksMod : ModInitializer {
-    const val MOD_ID = "extendedcommandblocks"
-    private val LOGGER = LoggerFactory.getLogger(MOD_ID)
+class ExtendedCommandBlocksMod : ModInitializer {
+    companion object {
+        const val MOD_ID = "extendedcommandblocks"
+        private val LOGGER = LoggerFactory.getLogger(MOD_ID)
+    }
 
     override fun onInitialize() {
         ModEffects.register()
