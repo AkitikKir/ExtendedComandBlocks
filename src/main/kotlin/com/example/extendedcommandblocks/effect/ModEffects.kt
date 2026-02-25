@@ -4,7 +4,6 @@ import com.example.extendedcommandblocks.ExtendedCommandBlocksMod
 import net.minecraft.entity.effect.StatusEffect
 import net.minecraft.entity.effect.StatusEffectCategory
 import net.minecraft.entity.effect.StatusEffectInstance
-import net.minecraft.item.ItemStack
 import net.minecraft.potion.Potion
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
@@ -25,9 +24,5 @@ object ModEffects {
 
     fun register() {
         // Object init triggers registrations.
-    }
-
-    fun hasCommandAccess(stack: ItemStack): Boolean {
-        return stack.isOf(net.minecraft.item.Items.POTION)
     }
 }

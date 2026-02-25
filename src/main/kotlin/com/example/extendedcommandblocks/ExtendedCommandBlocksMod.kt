@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry
 import net.minecraft.item.Items
 import net.minecraft.potion.Potions
+import net.minecraft.recipe.Ingredient
 import org.slf4j.LoggerFactory
 
 object ExtendedCommandBlocksMod : ModInitializer {
@@ -27,6 +28,10 @@ object ExtendedCommandBlocksMod : ModInitializer {
     }
 
     private fun registerBrewingRecipes() {
-        FabricBrewingRecipeRegistry.registerPotionRecipe(Potions.AWKWARD, Items.ECHO_SHARD, ModEffects.COMMAND_ACCESS_POTION)
+        FabricBrewingRecipeRegistry.registerPotionRecipe(
+            Potions.AWKWARD,
+            Ingredient.ofItems(Items.ECHO_SHARD),
+            ModEffects.COMMAND_ACCESS_POTION
+        )
     }
 }
