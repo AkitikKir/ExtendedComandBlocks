@@ -1,0 +1,831 @@
+--------- Starting game with Launcher Debug!
+Info: Launcher version: hebe-20251017-[dd44b8a]-v3_openjdk
+Info: Architecture: arm64
+Info: Device model: TECNO TECNO KI7
+Info: API version: 33
+Info: Selected Minecraft version: fabric-loader-0.18.4-1.20.1
+Info: Custom Java arguments: ""
+Info: RAM allocated: 2016 Mb
+Info: Graphics device: ARM Mali-G52 MC2 (OpenGL ES 3)
+Added custom env: MOJO_RENDERER=opengles3_ltw
+Added custom env: FORCE_VSYNC=true
+Added custom env: LIBGL_MIPMAP=3
+Added custom env: allow_higher_compat_version=true
+Added custom env: MESA_GLSL_CACHE_DIR=/data/user/0/git.artdeell.mojo/cache
+Added custom env: LIBGL_NOINTOVLHACK=1
+Added custom env: force_glsl_extensions_warn=true
+Added custom env: LIBGL_NORMALIZE=1
+Added custom env: POJAV_VSYNC_IN_ZINK=1
+Added custom env: LIBGL_NOERROR=1
+Added custom env: LIBGL_ES=2
+Added custom env: POJAVEXEC_EGL=libltw.so
+Added custom env: MESA_GLSL_VERSION_OVERRIDE=460
+Added custom env: allow_glsl_extension_directive_midshader=true
+LTW will force dynamic storage buffers to be coherent.
+LTW will prevent all explicit buffer flushes.
+--------- beginning of main
+D/jrelog  (31354): dlopen libltw.so success
+
+I/jrelog  (31354): updateLdLibPath: 0x7ab7863070
+
+[0.882s][warning][jni,resolve] Re-registering of platform native method: jdk.internal.loader.NativeLibraries.load(Ljdk/internal/loader/NativeLibraries$NativeLibraryImpl;Ljava/lang/String;ZZZ)Z from code in a different classloader
+2026-02-25 21:32:11,344 main ERROR appender Console has no parameter that matches element Policies
+[21:32:11] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.18.4
+[21:32:12] [main/INFO]: Loading 72 mods:
+	- extendedcommandblocks 0.1.0
+	- fabric-api 0.92.7+1.20.1
+	   |-- fabric-api-base 0.4.32+1802ada577
+	   |-- fabric-api-lookup-api-v1 1.6.37+1802ada577
+	   |-- fabric-biome-api-v1 13.0.15+93aa238b77
+	   |-- fabric-block-api-v1 1.0.12+1802ada577
+	   |-- fabric-block-view-api-v2 1.0.3+924f046a77
+	   |-- fabric-blockrenderlayer-v1 1.1.42+1802ada577
+	   |-- fabric-client-tags-api-v1 1.1.3+1802ada577
+	   |-- fabric-command-api-v1 1.2.35+f71b366f77
+	   |-- fabric-command-api-v2 2.2.14+1802ada577
+	   |-- fabric-commands-v0 0.2.52+df3654b377
+	   |-- fabric-containers-v0 0.1.67+df3654b377
+	   |-- fabric-content-registries-v0 4.0.13+1802ada577
+	   |-- fabric-convention-tags-v1 1.5.6+1802ada577
+	   |-- fabric-crash-report-info-v1 0.2.20+1802ada577
+	   |-- fabric-data-attachment-api-v1 1.0.2+de0fd6d177
+	   |-- fabric-data-generation-api-v1 12.3.7+1802ada577
+	   |-- fabric-dimensions-v1 2.1.55+1802ada577
+	   |-- fabric-entity-events-v1 1.6.1+1c78457f77
+	   |-- fabric-events-interaction-v0 0.6.5+13a40c6677
+	   |-- fabric-events-lifecycle-v0 0.2.64+df3654b377
+	   |-- fabric-game-rule-api-v1 1.0.41+1802ada577
+	   |-- fabric-item-api-v1 2.1.29+1802ada577
+	   |-- fabric-item-group-api-v1 4.0.14+1802ada577
+	   |-- fabric-key-binding-api-v1 1.0.38+1802ada577
+	   |-- fabric-keybindings-v0 0.2.36+df3654b377
+	   |-- fabric-lifecycle-events-v1 2.2.23+1802ada577
+	   |-- fabric-loot-api-v2 1.2.3+1802ada577
+	   |-- fabric-loot-tables-v1 1.1.47+9e7660c677
+	   |-- fabric-message-api-v1 5.1.10+1802ada577
+	   |-- fabric-mining-level-api-v1 2.1.52+1802ada577
+	   |-- fabric-model-loading-api-v1 1.0.4+1802ada577
+	   |-- fabric-models-v0 0.4.3+9386d8a777
+	   |-- fabric-networking-api-v1 1.3.14+a158aa0477
+	   |-- fabric-networking-v0 0.3.54+df3654b377
+	   |-- fabric-object-builder-api-v1 11.1.5+e35120df77
+	   |-- fabric-particles-v1 1.1.3+1802ada577
+	   |-- fabric-recipe-api-v1 1.0.24+1802ada577
+	   |-- fabric-registry-sync-v0 2.3.6+1802ada577
+	   |-- fabric-renderer-api-v1 3.2.2+1802ada577
+	   |-- fabric-renderer-indigo 1.5.3+85287f9f77
+	   |-- fabric-renderer-registries-v1 3.2.47+df3654b377
+	   |-- fabric-rendering-data-attachment-v1 0.3.39+92a0d36777
+	   |-- fabric-rendering-fluids-v1 3.0.29+1802ada577
+	   |-- fabric-rendering-v0 1.1.50+df3654b377
+	   |-- fabric-rendering-v1 3.0.9+1802ada577
+	   |-- fabric-resource-conditions-api-v1 2.3.9+1802ada577
+	   |-- fabric-resource-loader-v0 0.11.12+fb82e9d777
+	   |-- fabric-screen-api-v1 2.0.9+1802ada577
+	   |-- fabric-screen-handler-api-v1 1.3.33+1802ada577
+	   |-- fabric-sound-api-v1 1.0.14+1802ada577
+	   |-- fabric-transfer-api-v1 3.3.6+8dd72ea377
+	   \-- fabric-transitive-access-wideners-v1 4.3.2+1802ada577
+	- fabric-language-kotlin 1.13.9+kotlin.2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-reflect 2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.3.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.3.10
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.31.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.10.2
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.7.1
+	   |-- org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm 0.8.2
+	   |-- org_jetbrains_kotlinx_kotlinx-io-core-jvm 0.8.2
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.10.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.10.0
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.10.0
+	- fabricloader 0.18.4
+	   \-- mixinextras 0.5.0
+	- java 17
+	- minecraft 1.20.1
+[21:32:12] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[21:32:12] [main/INFO]: Compatibility level set to JAVA_17
+[21:32:16] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[21:32:16] [main/WARN]: File not found or not readable: /proc/stat
+[21:32:30] [Datafixer Bootstrap/INFO]: 188 Datafixer optimizations took 701 milliseconds
+[21:32:36] [Render thread/INFO]: [STDERR]: [LWJGL] [ERROR] Incompatible Java and native library versions detected.
+Possible reasons:
+	a) -Djava.library.path is set to a folder containing shared libraries of an older LWJGL version.
+	b) The classpath contains jar files of an older LWJGL version.
+Possible solutions:
+	a) Make sure to not set -Djava.library.path (it is not needed for developing with LWJGL 3) or make
+	   sure the folder it points to contains the shared libraries of the correct LWJGL version.
+	b) Check the classpath and make sure to only have jar files of the same LWJGL version in it.
+[LWJGL] Failed to load a library. Possible solutions:
+	a) Add the directory that contains the shared library to -Djava.library.path or -Dorg.lwjgl.librarypath.
+	b) Add the JAR that contains the shared library to the classpath.
+[LWJGL] Enable debug mode with -Dorg.lwjgl.util.Debug=true for better diagnostics.
+[LWJGL] Enable the SharedLibraryLoader debug mode with -Dorg.lwjgl.util.DebugLoader=true for better diagnostics.
+[21:32:37] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:32:39] [Render thread/ERROR]: Failed to verify authentication
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.<init>(YggdrasilUserApiService.java:55) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createUserApiService(YggdrasilAuthenticationService.java:124) ~[authlib-4.0.43.jar:?]
+	at net.minecraft.class_310.method_31382(class_310.java:733) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.<init>(class_310.java:442) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:211) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:85) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
+	... 8 more
+[21:32:39] [Render thread/INFO]: Setting user: Akitik
+[21:32:39] [Render thread/INFO]: Extended Command Blocks initialized
+[21:32:40] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+Registered forkAndExec
+[21:32:41] [Render thread/ERROR]: Error parsing option value off for option Fullscreen: Not a boolean: "off"
+[21:32:41] [Render thread/INFO]: Backend library: LWJGL version 3.3.3-snapshot
+EGLBridge: Binding to OpenGL ES
+LTW: Running on OpenGL ES 3.2 with ESSL 320
+LTW: BaseVertex render calls will use the host driver implementation
+[21:32:42] [Render thread/INFO]: [STDERR]: [LWJGL] [ERROR] Incompatible Java and native library versions detected.
+Possible reasons:
+	a) -Djava.library.path is set to a folder containing shared libraries of an older LWJGL version.
+	b) The classpath contains jar files of an older LWJGL version.
+Possible solutions:
+	a) Make sure to not set -Djava.library.path (it is not needed for developing with LWJGL 3) or make
+	   sure the folder it points to contains the shared libraries of the correct LWJGL version.
+	b) Check the classpath and make sure to only have jar files of the same LWJGL version in it.
+LTW: Overridden glGetError
+LTW: Overridden glGetString
+LTW: Overridden glGetIntegerv
+GL_NUM_EXTENSIONS: 105
+LTW: Overridden glGetStringi
+LTW: Overridden glEnable
+LTW: Overridden glClearDepth
+LTW: Overridden glDepthRange
+LTW: Overridden glDrawBuffer
+LTW: Overridden glGetIntegerv
+LTW: Overridden glGetError
+LTW: Overridden glGetString
+LTW: Overridden glGetTexImage
+LTW: Overridden glGetTexLevelParameteriv
+LTW: Overridden glGetTexLevelParameterfv
+LTW: Overridden glReadPixels
+LTW: Overridden glTexImage2D
+LTW: Overridden glCopyTexSubImage2D
+LTW: Overridden glTexParameteri
+LTW: Overridden glTexParameteriv
+LTW: Overridden glTexParameterf
+LTW: Overridden glTexParameterfv
+LTW: Overridden glTexSubImage2D
+LTW: Overridden glMultiDrawArrays
+LTW: Overridden glMultiDrawElements
+LTW: Overridden glBindBuffer
+LTW: Overridden glMapBuffer
+LTW: Overridden glGetQueryObjectiv
+LTW: Overridden glCreateProgram
+LTW: Overridden glDeleteProgram
+LTW: Overridden glCreateShader
+LTW: Overridden glDeleteShader
+LTW: Overridden glAttachShader
+LTW: Overridden glShaderSource
+LTW: Overridden glLinkProgram
+LTW: Overridden glUseProgram
+LTW: Overridden glGetShaderiv
+LTW: Overridden glVertexAttrib1s
+LTW: Overridden glVertexAttrib1d
+LTW: Overridden glVertexAttrib2s
+LTW: Overridden glVertexAttrib2d
+LTW: Overridden glVertexAttrib3s
+LTW: Overridden glVertexAttrib3d
+LTW: Overridden glVertexAttrib4s
+LTW: Overridden glVertexAttrib4d
+LTW: Overridden glVertexAttrib4Nub
+LTW: Overridden glVertexAttrib1sv
+LTW: Overridden glVertexAttrib1dv
+LTW: Overridden glVertexAttrib2sv
+LTW: Overridden glVertexAttrib2dv
+LTW: Overridden glVertexAttrib3sv
+LTW: Overridden glVertexAttrib3dv
+LTW: Overridden glVertexAttrib4sv
+LTW: Overridden glVertexAttrib4dv
+LTW: Overridden glVertexAttrib4Nbv
+LTW: Overridden glVertexAttrib4Nsv
+LTW: Overridden glVertexAttrib4Niv
+LTW: Overridden glVertexAttrib4Nubv
+LTW: Overridden glVertexAttrib4Nusv
+LTW: Overridden glVertexAttrib4Nuiv
+LTW: Overridden glDrawBuffers
+LTW: Overridden glGetStringi
+LTW: Overridden glClearBufferiv
+LTW: Overridden glClearBufferuiv
+LTW: Overridden glClearBufferfv
+LTW: Overridden glVertexAttribI1i
+LTW: Overridden glVertexAttribI2i
+LTW: Overridden glVertexAttribI3i
+LTW: Overridden glVertexAttribI1ui
+LTW: Overridden glVertexAttribI2ui
+LTW: Overridden glVertexAttribI3ui
+LTW: Overridden glVertexAttribI1iv
+LTW: Overridden glVertexAttribI2iv
+LTW: Overridden glVertexAttribI3iv
+LTW: Overridden glVertexAttribI1uiv
+LTW: Overridden glVertexAttribI2uiv
+LTW: Overridden glVertexAttribI3uiv
+LTW: Overridden glVertexAttribI4bv
+LTW: Overridden glVertexAttribI4sv
+LTW: Overridden glVertexAttribI4ubv
+LTW: Overridden glVertexAttribI4usv
+LTW: Overridden glBindFragDataLocation
+LTW: Overridden glMapBufferRange
+LTW: Overridden glFlushMappedBufferRange
+LTW: Overridden glRenderbufferStorage
+LTW: Overridden glBindFramebuffer
+LTW: Overridden glDeleteFramebuffers
+LTW: Overridden glGenFramebuffers
+LTW: Overridden glCheckFramebufferStatus
+LTW: Overridden glFramebufferTexture2D
+LTW: Overridden glFramebufferTextureLayer
+LTW: Overridden glFramebufferRenderbuffer
+LTW: Overridden glGetFramebufferAttachmentParameteriv
+LTW: Overridden glTexParameterIiv
+LTW: Overridden glTexParameterIuiv
+LTW: Overridden glBindBufferRange
+LTW: Overridden glBindBufferBase
+LTW: Overridden glTexBuffer
+LTW: Overridden glDrawElementsBaseVertex
+LTW: Overridden glMultiDrawElementsBaseVertex
+LTW: Overridden glBufferStorage
+LTW: Overridden glDebugMessageControl
+[21:32:42] [Render thread/INFO]: [STDERR]: [LWJGL] [ERROR] Incompatible Java and native library versions detected.
+Possible reasons:
+	a) -Djava.library.path is set to a folder containing shared libraries of an older LWJGL version.
+	b) The classpath contains jar files of an older LWJGL version.
+Possible solutions:
+	a) Make sure to not set -Djava.library.path (it is not needed for developing with LWJGL 3) or make
+	   sure the folder it points to contains the shared libraries of the correct LWJGL version.
+	b) Check the classpath and make sure to only have jar files of the same LWJGL version in it.
+[21:32:43] [Render thread/INFO]: [STDERR]: [LWJGL] [ERROR] Incompatible Java and native library versions detected.
+Possible reasons:
+	a) -Djava.library.path is set to a folder containing shared libraries of an older LWJGL version.
+	b) The classpath contains jar files of an older LWJGL version.
+Possible solutions:
+	a) Make sure to not set -Djava.library.path (it is not needed for developing with LWJGL 3) or make
+	   sure the folder it points to contains the shared libraries of the correct LWJGL version.
+	b) Check the classpath and make sure to only have jar files of the same LWJGL version in it.
+[21:32:45] [Worker-Main-1/ERROR]: Failed to retrieve profile key pair
+java.io.IOException: Could not retrieve profile key pair
+	at net.minecraft.class_7434.method_43605(class_7434.java:139) ~[client-intermediary.jar:?]
+	at net.minecraft.class_7434.method_44291(class_7434.java:79) ~[client-intermediary.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[21:32:45] [Render thread/ERROR]: Error while loading the narrator
+com.mojang.text2speech.Narrator$InitializeException: Failed to load library flite
+	at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:69) ~[text2speech-1.17.9.jar:?]
+	at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+	at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+	at net.minecraft.class_333.<init>(class_333.java:19) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.<init>(class_310.java:640) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:211) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+Caused by: java.lang.UnsatisfiedLinkError: Unable to load library 'flite':
+dlopen failed: library "libflite.so" not found
+dlopen failed: library "libflite.so" not found
+Native library (linux-aarch64/libflite.so) not found in resource path (/storage/emulated/0/Android/data/git.artdeell.mojo/files/lwjgl3/lwjgl-glfw-classes.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/github/oshi/oshi-core/6.3.0/oshi-core-6.3.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/intermediary/1.20.1/intermediary-1.20.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-util/9.9/asm-util-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/text2speech/1.17.9/text2speech-1.17.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-analysis/9.9/asm-analysis-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm/9.9/asm-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/versions/fabric-loader-0.18.4-1.20.1/fabric-loader-0.18.4-1.20.1.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:323) ~[jna-5.13.0.jar:?]
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483) ~[jna-5.13.0.jar:?]
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:425) ~[jna-5.13.0.jar:?]
+	at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+	... 8 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen failed: library "libflite.so" not found
+		at com.sun.jna.Native.open(Native Method) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:211) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:425) ~[jna-5.13.0.jar:?]
+		at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+		at net.minecraft.class_333.<init>(class_333.java:19) ~[client-intermediary.jar:?]
+		at net.minecraft.class_310.<init>(class_310.java:640) ~[client-intermediary.jar:?]
+		at net.minecraft.client.main.Main.main(Main.java:211) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen failed: library "libflite.so" not found
+		at com.sun.jna.Native.open(Native Method) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:224) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:425) ~[jna-5.13.0.jar:?]
+		at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+		at net.minecraft.class_333.<init>(class_333.java:19) ~[client-intermediary.jar:?]
+		at net.minecraft.class_310.<init>(class_310.java:640) ~[client-intermediary.jar:?]
+		at net.minecraft.client.main.Main.main(Main.java:211) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+	Suppressed: java.io.IOException: Native library (linux-aarch64/libflite.so) not found in resource path (/storage/emulated/0/Android/data/git.artdeell.mojo/files/lwjgl3/lwjgl-glfw-classes.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/it/unimi/dsi/fastutil/8.5.9/fastutil-8.5.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/github/oshi/oshi-core/6.3.0/oshi-core-6.3.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/intermediary/1.20.1/intermediary-1.20.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-util/9.9/asm-util-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/text2speech/1.17.9/text2speech-1.17.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-analysis/9.9/asm-analysis-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm/9.9/asm-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/slf4j/slf4j-api/2.0.1/slf4j-api-2.0.1.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar:/storage/emulated/0/Android/data/git.artdeell.mojo/files/.minecraft/versions/fabric-loader-0.18.4-1.20.1/fabric-loader-0.18.4-1.20.1.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1145) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:295) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:483) ~[jna-5.13.0.jar:?]
+		at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:425) ~[jna-5.13.0.jar:?]
+		at com.mojang.text2speech.NarratorLinux$FliteLibrary.loadNative(NarratorLinux.java:67) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.NarratorLinux.<init>(NarratorLinux.java:18) ~[text2speech-1.17.9.jar:?]
+		at com.mojang.text2speech.Narrator.getNarrator(Narrator.java:41) ~[text2speech-1.17.9.jar:?]
+		at net.minecraft.class_333.<init>(class_333.java:19) ~[client-intermediary.jar:?]
+		at net.minecraft.class_310.<init>(class_310.java:640) ~[client-intermediary.jar:?]
+		at net.minecraft.client.main.Main.main(Main.java:211) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+		at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+		at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:32:46] [Render thread/INFO]: Reloading ResourceManager: vanilla, fabric (extendedcommandblocks, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-containers-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-events-lifecycle-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-language-kotlin, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-tables-v1, fabric-message-api-v1, fabric-mining-level-api-v1, fabric-model-loading-api-v1, fabric-models-v0, fabric-networking-api-v1, fabric-networking-v0, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader)
+[21:32:46] [Worker-Main-6/INFO]: Found unifont_all_no_pua-15.0.06.hex, loading
+[21:32:47] [Render thread/INFO]: [STDOUT]: GLFW: Set size for window 516386272784, width=614, height=270
+[21:32:47] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[21:32:53] [Render thread/WARN]: Missing sound for event: minecraft:item.goat_horn.play
+[21:32:53] [Render thread/WARN]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[21:32:54] [Render thread/INFO]: OpenAL initialized on device Oboe Default
+[21:32:54] [Render thread/INFO]: Sound engine started
+[21:32:54] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/blocks.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[21:32:54] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
+[21:32:56] [Render thread/WARN]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[21:32:59] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[21:32:59] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[21:32:59] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[21:34:16] [Render thread/INFO]: [STDOUT]: GLFW: Set size for window 516386272784, width=614, height=270
+[21:34:17] [Render thread/INFO]: [STDOUT]: GLFW: Set size for window 516386272784, width=614, height=270
+[21:34:29] [Render thread/INFO]: Loaded 7 recipes
+[21:34:29] [Render thread/INFO]: Loaded 1271 advancements
+[21:34:44] [Render thread/INFO]: Applied 0 biome modifications to 0 of 64 new biomes in 4.686 ms
+[21:34:44] [Server thread/INFO]: Starting integrated minecraft server version 1.20.1
+[21:34:44] [Server thread/INFO]: Generating keypair
+[21:34:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:34:51] [Render thread/INFO]: Preparing spawn area: 0%
+[21:34:51] [Render thread/INFO]: Preparing spawn area: 0%
+[21:34:51] [Render thread/INFO]: Preparing spawn area: 0%
+[21:34:51] [Render thread/INFO]: Preparing spawn area: 0%
+[21:34:51] [Render thread/INFO]: Preparing spawn area: 0%
+[21:34:51] [Render thread/INFO]: Preparing spawn area: 0%
+[21:34:52] [Render thread/INFO]: Preparing spawn area: 1%
+[21:34:52] [Render thread/INFO]: Preparing spawn area: 2%
+[21:34:53] [Render thread/INFO]: Preparing spawn area: 5%
+[21:34:53] [Render thread/INFO]: Preparing spawn area: 10%
+[21:34:54] [Render thread/INFO]: Preparing spawn area: 14%
+[21:34:54] [Render thread/INFO]: Preparing spawn area: 20%
+[21:34:55] [Render thread/INFO]: Preparing spawn area: 24%
+[21:34:55] [Render thread/INFO]: Preparing spawn area: 28%
+[21:34:56] [Render thread/INFO]: Preparing spawn area: 33%
+[21:34:57] [Render thread/INFO]: Preparing spawn area: 35%
+[21:34:57] [Render thread/INFO]: Preparing spawn area: 37%
+[21:34:57] [Render thread/INFO]: Preparing spawn area: 41%
+[21:34:58] [Render thread/INFO]: Preparing spawn area: 46%
+[21:34:58] [Render thread/INFO]: Preparing spawn area: 50%
+[21:34:59] [Render thread/INFO]: Preparing spawn area: 54%
+[21:34:59] [Render thread/INFO]: Preparing spawn area: 59%
+[21:35:00] [Render thread/INFO]: Preparing spawn area: 65%
+[21:35:00] [Render thread/INFO]: Preparing spawn area: 71%
+[21:35:01] [Render thread/INFO]: Preparing spawn area: 79%
+[21:35:01] [Render thread/INFO]: Preparing spawn area: 85%
+[21:35:02] [Render thread/INFO]: Preparing spawn area: 92%
+[21:35:02] [Render thread/INFO]: Time elapsed: 13460 ms
+[21:35:03] [Server thread/INFO]: Changing view distance to 2, from 10
+[21:35:03] [Server thread/INFO]: Changing simulation distance to 5, from 0
+[21:35:03] [Render thread/WARN]: Failed to find a usable hardware address from the network interfaces; using random bytes: 44:78:bc:6c:9b:ed:12:23
+[21:35:04] [Server thread/INFO]: Akitik[local:E:234b0e86] logged in with entity id 66 at (-0.5, -60.0, 0.5)
+[21:35:05] [Server thread/INFO]: Akitik joined the game
+[21:35:05] [Render thread/ERROR]: Mixin apply for mod extendedcommandblocks failed extendedcommandblocks.client.mixins.json:CommandBlockScreenMixin from mod extendedcommandblocks -> net.minecraft.class_463: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException @Shadow field commandExecutor was not located in the target class net.minecraft.class_463. Using refmap extendedcommandblocks-refmap.json
+org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: @Shadow field commandExecutor was not located in the target class net.minecraft.class_463. Using refmap extendedcommandblocks-refmap.json
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachFields(MixinPreProcessorStandard.java:624) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:302) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1291) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:203) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.18.4.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.defineClassFwd(KnotClassLoader.java:165) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:368) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.18.4.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at net.minecraft.class_636.method_2901(class_636.java:405) ~[client-intermediary.jar:?]
+	at net.minecraft.class_636.method_29357(class_636.java:401) ~[client-intermediary.jar:?]
+	at net.minecraft.class_634.method_11120(class_634.java:428) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2678.method_11567(class_2678.java:95) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2678.method_11054(class_2678.java:25) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.RuntimeException: Mixin transformation of net.minecraft.class_463 failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:440) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:336) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.18.4.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.defineClassFwd(KnotClassLoader.java:165) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:368) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:231) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119) ~[fabric-loader-0.18.4.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at net.minecraft.class_636.method_2901(class_636.java:405) ~[client-intermediary.jar:?]
+	at net.minecraft.class_636.method_29357(class_636.java:401) ~[client-intermediary.jar:?]
+	at net.minecraft.class_634.method_11120(class_634.java:428) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2678.method_11567(class_2678.java:95) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2678.method_11054(class_2678.java:25) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:381) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.18.4.jar:?]
+	... 28 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [extendedcommandblocks.client.mixins.json:CommandBlockScreenMixin from mod extendedcommandblocks] from phase [DEFAULT] in config [extendedcommandblocks.client.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:686) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:637) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:368) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.18.4.jar:?]
+	... 28 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: @Shadow field commandExecutor was not located in the target class net.minecraft.class_463. Using refmap extendedcommandblocks-refmap.json
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachFields(MixinPreProcessorStandard.java:624) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:302) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1291) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:203) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:352) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:237) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202) ~[sponge-mixin-0.17.0+mixin.0.8.7.jar:0.17.0+mixin.0.8.7]
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:435) ~[fabric-loader-0.18.4.jar:?]
+	... 28 more
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_746.method_3146(String)" because "this.field_3690.field_1724" is null
+	at net.minecraft.class_634.method_11152(class_634.java:1999) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2658.method_11457(class_2658.java:60) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2658.method_11054(class_2658.java:8) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_1657.method_31549()" because "$$1" is null
+	at net.minecraft.class_634.method_11154(class_634.java:1848) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2696.method_11697(class_2696.java:65) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2696.method_11054(class_2696.java:7) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_746.method_31548()" because "this.field_3690.field_1724" is null
+	at net.minecraft.class_634.method_11135(class_634.java:585) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2735.method_11802(class_2735.java:25) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2735.method_11054(class_2735.java:7) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_746.method_3130()" because "this.field_3690.field_1724" is null
+	at net.minecraft.class_634.method_11106(class_634.java:1442) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2788.method_11997(class_2788.java:32) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2788.method_11054(class_2788.java:14) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "com.mojang.brigadier.CommandDispatcher.getRoot()" because "net.fabricmc.fabric.impl.command.client.ClientCommandInternals.activeDispatcher" is null
+	at net.fabricmc.fabric.impl.command.client.ClientCommandInternals.addCommands(ClientCommandInternals.java:185) ~[fabric-command-api-v2-2.2.14+1802ada577-d3d1b6ffeb70f5f9.jar:?]
+	at net.minecraft.class_634.handler$zzm000$fabric-command-api-v2$onOnCommandTree(class_634.java:3777) ~[client-intermediary.jar:?]
+	at net.minecraft.class_634.method_11145(class_634.java:1423) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2641.method_11404(class_2641.java:254) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2641.method_11054(class_2641.java:37) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_746.method_3130()" because "this.field_3690.field_1724" is null
+	at net.minecraft.class_634.method_11115(class_634.java:1485) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2713.method_11753(class_2713.java:59) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2713.method_11054(class_2713.java:12) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_1657.method_18798()" because "$$1" is null
+	at net.minecraft.class_634.method_11157(class_634.java:648) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2708.method_11740(class_2708.java:51) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2708.method_11054(class_2708.java:9) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Render thread/ERROR]: Error executing task on Client
+java.lang.NullPointerException: Cannot read field "field_7498" because "$$1" is null
+	at net.minecraft.class_634.method_11153(class_634.java:1242) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2649.method_11439(class_2649.java:44) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2649.method_11054(class_2649.java:11) ~[client-intermediary.jar:?]
+	at net.minecraft.class_2600.method_11072(class_2600.java:22) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_18859(class_1255.java:156) ~[client-intermediary.jar:?]
+	at net.minecraft.class_4093.method_18859(class_4093.java:23) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_16075(class_1255.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_1255.method_5383(class_1255.java:115) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1175) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2026ms or 40 ticks behind
+[21:35:07] [Render thread/ERROR]: Unreported exception thrown!
+java.lang.NullPointerException: Cannot read field "field_44912" because "this.field_4015.field_1724" is null
+	at net.minecraft.class_757.method_3188(class_757.java:1085) ~[client-intermediary.jar:?]
+	at net.minecraft.class_757.method_3192(class_757.java:880) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1523(class_310.java:1219) ~[client-intermediary.jar:?]
+	at net.minecraft.class_310.method_1514(class_310.java:802) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:250) ~[fabric-loader-0.18.4-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72) ~[fabric-loader-0.18.4.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.18.4.jar:?]
+[21:35:08] [Server thread/INFO]: Stopping server
+[21:35:08] [Server thread/INFO]: Saving players
+[21:35:08] [Server thread/INFO]: Saving worlds
+[21:35:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[21:35:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[21:35:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[21:35:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[21:35:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:35:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:35:13] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2026-02-25 21:35:14
+Description: Unexpected error
+
+java.lang.NullPointerException: Cannot read field "field_44912" because "this.field_4015.field_1724" is null
+	at knot//net.minecraft.class_757.method_3188(class_757.java:1085)
+	at knot//net.minecraft.class_757.method_3192(class_757.java:880)
+	at knot//net.minecraft.class_310.method_1523(class_310.java:1219)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:802)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at knot//net.minecraft.class_757.method_3188(class_757.java:1085)
+
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: 121, 45
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,-60,0), Section: (at 0,4,0 in 0,-4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 18 game time, 18 day time
+	Server brand: ~~ERROR~~ NullPointerException: Cannot invoke "net.minecraft.class_746.method_3135()" because "this.field_3729.field_1724" is null
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at knot//net.minecraft.class_638.method_8538(class_638.java:458)
+	at knot//net.minecraft.class_310.method_1587(class_310.java:2406)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:826)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, fabric
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (aarch64) version Android-13
+	Java Version: 17.0.17-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1429660512 bytes (1363 MiB) / 2113929216 bytes (2016 MiB) up to 2113929216 bytes (2016 MiB)
+	CPUs: 8
+	Processor Vendor: 0x41
+	Processor Name: 
+	Identifier: 0x41 Family 8 Model 0xd0a Stepping r1p0
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 2
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 8118.98
+	Virtual memory used (MB): 8488.02
+	Swap memory total (MB): 4252.52
+	Swap memory used (MB): 2196.06
+	JVM Flags: 3 total; -Xmx2016M -Xms2016M -XX:ActiveProcessorCount=8
+	Fabric Mods: 
+		extendedcommandblocks: Extended Command Blocks 0.1.0
+		fabric-api: Fabric API 0.92.7+1.20.1
+			fabric-api-base: Fabric API Base 0.4.32+1802ada577
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.37+1802ada577
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.15+93aa238b77
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.12+1802ada577
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.3+924f046a77
+			fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.42+1802ada577
+			fabric-client-tags-api-v1: Fabric Client Tags 1.1.3+1802ada577
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.35+f71b366f77
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.14+1802ada577
+			fabric-commands-v0: Fabric Commands (v0) 0.2.52+df3654b377
+			fabric-containers-v0: Fabric Containers (v0) 0.1.67+df3654b377
+			fabric-content-registries-v0: Fabric Content Registries (v0) 4.0.13+1802ada577
+			fabric-convention-tags-v1: Fabric Convention Tags 1.5.6+1802ada577
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.20+1802ada577
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.0.2+de0fd6d177
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 12.3.7+1802ada577
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.55+1802ada577
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.1+1c78457f77
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.5+13a40c6677
+			fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.64+df3654b377
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.41+1802ada577
+			fabric-item-api-v1: Fabric Item API (v1) 2.1.29+1802ada577
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.14+1802ada577
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.38+1802ada577
+			fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.36+df3654b377
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.23+1802ada577
+			fabric-loot-api-v2: Fabric Loot API (v2) 1.2.3+1802ada577
+			fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.47+9e7660c677
+			fabric-message-api-v1: Fabric Message API (v1) 5.1.10+1802ada577
+			fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.52+1802ada577
+			fabric-model-loading-api-v1: Fabric Model Loading API (v1) 1.0.4+1802ada577
+			fabric-models-v0: Fabric Models (v0) 0.4.3+9386d8a777
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.3.14+a158aa0477
+			fabric-networking-v0: Fabric Networking (v0) 0.3.54+df3654b377
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 11.1.5+e35120df77
+			fabric-particles-v1: Fabric Particles (v1) 1.1.3+1802ada577
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.24+1802ada577
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 2.3.6+1802ada577
+			fabric-renderer-api-v1: Fabric Renderer API (v1) 3.2.2+1802ada577
+			fabric-renderer-indigo: Fabric Renderer - Indigo 1.5.3+85287f9f77
+			fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.47+df3654b377
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.39+92a0d36777
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.29+1802ada577
+			fabric-rendering-v0: Fabric Rendering (v0) 1.1.50+df3654b377
+			fabric-rendering-v1: Fabric Rendering (v1) 3.0.9+1802ada577
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.9+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.12+fb82e9d777
+			fabric-screen-api-v1: Fabric Screen API (v1) 2.0.9+1802ada577
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.33+1802ada577
+			fabric-sound-api-v1: Fabric Sound API (v1) 1.0.14+1802ada577
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 3.3.6+8dd72ea377
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 4.3.2+1802ada577
+		fabric-language-kotlin: Fabric Language Kotlin 1.13.9+kotlin.2.3.10
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.3.10
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.3.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.3.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.3.10
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.31.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.10.2
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.10.2
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.7.1
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.8.2
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.8.2
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.10.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.10.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.10.0
+		fabricloader: Fabric Loader 0.18.4
+			mixinextras: MixinExtras 0.5.0
+		java: OpenJDK 64-Bit Server VM 17
+		minecraft: Minecraft 1.20.1
+	Launched Version: 1.20.1
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: Mali-G52 MC2 GL version 3.0 OpenLTW, artDev, SerpentSpirale, CADIndie
+	Window size: 614x270
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'; Server brand changed to 'fabric'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: fabric
+	Current Language: en_us
+	CPU: 8x 
+	Server Running: true
+	Player Count: 1 / 8; [class_3222['Akitik'/66, l='ServerLevel[New World]', x=-0.50, y=-60.00, z=0.50]]
+	Data Packs: vanilla, fabric
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+#@!@# Game crashed! Crash report saved to: #@!@# /storage/emulated/0/Android/data/git.artdeell.mojo/files/instances/fabric-loader-0.18.4-1.20.1-f62e91af-5a37-45f6-bb0c-d296a51e266f/crash-reports/crash-2026-02-25_21.35.14-client.txt
