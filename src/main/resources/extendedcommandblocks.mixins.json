@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.extendedcommandblocks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CommandBlockBlockMixin",
+    "ServerPlayNetworkHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

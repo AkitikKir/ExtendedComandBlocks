@@ -1,0 +1,6 @@
+{
+  "effect.extendedcommandblocks.command_access": "Command Block Access",
+  "item.minecraft.potion.effect.extendedcommandblocks.command_access": "Command Block Access Potion",
+  "item.minecraft.splash_potion.effect.extendedcommandblocks.command_access": "Splash Command Block Access Potion",
+  "item.minecraft.lingering_potion.effect.extendedcommandblocks.command_access": "Lingering Command Block Access Potion"
+}

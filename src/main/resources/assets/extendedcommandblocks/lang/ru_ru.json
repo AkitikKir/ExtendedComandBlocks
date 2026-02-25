@@ -1,0 +1,6 @@
+{
+  "effect.extendedcommandblocks.command_access": "Доступ к командным блокам",
+  "item.minecraft.potion.effect.extendedcommandblocks.command_access": "Зелье доступа к командным блокам",
+  "item.minecraft.splash_potion.effect.extendedcommandblocks.command_access": "Взрывное зелье доступа к командным блокам",
+  "item.minecraft.lingering_potion.effect.extendedcommandblocks.command_access": "Туманное зелье доступа к командным блокам"
+}

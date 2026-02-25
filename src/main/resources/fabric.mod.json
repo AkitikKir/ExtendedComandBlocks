@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "extendedcommandblocks",
+  "version": "${version}",
+  "name": "Extended Command Blocks",
+  "description": "Command block access with potion-gated permissions and command whitelist.",
+  "authors": ["Codex"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.extendedcommandblocks.ExtendedCommandBlocksMod"
+    ]
+  },
+  "mixins": [
+    "extendedcommandblocks.mixins.json",
+    "extendedcommandblocks.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-language-kotlin": "*",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1"
+  }
+}
