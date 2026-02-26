@@ -1,7 +1,6 @@
 package com.example.extendedcommandblocks.mixin;
 
 import com.example.extendedcommandblocks.PermissionGate;
-import com.example.extendedcommandblocks.effect.ModEffects;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CommandBlock;
 import net.minecraft.block.entity.BlockEntity;
@@ -33,9 +32,8 @@ public class CommandBlockBlockMixin {
             CallbackInfoReturnable<ActionResult> cir
     ) {
         if (world.isClient) {
-            if (player.hasStatusEffect(ModEffects.INSTANCE.getCOMMAND_ACCESS_EFFECT())) {
-                cir.setReturnValue(ActionResult.SUCCESS);
-            }
+            // Always let client send interaction packet; server side enforces access checks.
+            cir.setReturnValue(ActionResult.SUCCESS);
             return;
         }
 
@@ -53,7 +51,7 @@ public class CommandBlockBlockMixin {
         }
 
         if (!PermissionGate.INSTANCE.hasPotionAccess(serverPlayer)) {
-            serverPlayer.sendMessage(Text.literal("Нужен специальный эффект для доступа к командному блоку"), true);
+            serverPlayer.sendMessage(Text.literal("Нужен специальный эффект для доступа к командному блоку"), false);
             cir.setReturnValue(ActionResult.FAIL);
             return;
         }

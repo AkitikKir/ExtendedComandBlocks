@@ -26,13 +26,13 @@ public abstract class ServerPlayNetworkHandlerMixin {
         }
 
         if (!PermissionGate.INSTANCE.hasPotionAccess(this.player)) {
-            this.player.sendMessage(Text.literal("Нужен специальный эффект для редактирования командного блока"), true);
+            this.player.sendMessage(Text.literal("Нужен специальный эффект для редактирования командного блока"), false);
             ci.cancel();
             return;
         }
 
         if (!CommandWhitelist.INSTANCE.checkCommand(packet.getCommand())) {
-            this.player.sendMessage(Text.literal("Команда не существует или у вас нет доступа"), true);
+            this.player.sendMessage(Text.literal("Команда не существует или у вас нет доступа"), false);
             ci.cancel();
         }
     }
