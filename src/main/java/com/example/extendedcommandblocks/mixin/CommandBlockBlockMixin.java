@@ -1,6 +1,7 @@
 package com.example.extendedcommandblocks.mixin;
 
 import com.example.extendedcommandblocks.PermissionGate;
+import com.example.extendedcommandblocks.effect.ModEffects;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CommandBlock;
 import net.minecraft.block.entity.BlockEntity;
@@ -31,6 +32,13 @@ public class CommandBlockBlockMixin {
             BlockHitResult hit,
             CallbackInfoReturnable<ActionResult> cir
     ) {
+        if (world.isClient) {
+            if (player.hasStatusEffect(ModEffects.INSTANCE.getCOMMAND_ACCESS_EFFECT())) {
+                cir.setReturnValue(ActionResult.SUCCESS);
+            }
+            return;
+        }
+
         if (!(player instanceof ServerPlayerEntity serverPlayer)) {
             return;
         }
