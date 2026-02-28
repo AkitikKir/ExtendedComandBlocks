@@ -41,7 +41,7 @@ public class CommandBlockBlockMixin {
             return;
         }
 
-        if (serverPlayer.isCreativeLevelTwoOp()) {
+        if (PermissionGate.INSTANCE.hasCommandBlockAccess(serverPlayer)) {
             return;
         }
 

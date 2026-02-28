@@ -21,7 +21,7 @@ public abstract class ServerPlayNetworkHandlerMixin {
 
     @Inject(method = "onUpdateCommandBlock", at = @At("HEAD"), cancellable = true)
     private void extendedcommandblocks$validateWhitelist(UpdateCommandBlockC2SPacket packet, CallbackInfo ci) {
-        if (this.player.isCreativeLevelTwoOp()) {
+        if (PermissionGate.INSTANCE.hasCommandBlockAccess(this.player)) {
             return;
         }
 
@@ -42,6 +42,6 @@ public abstract class ServerPlayNetworkHandlerMixin {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/server/network/ServerPlayerEntity;isCreativeLevelTwoOp()Z")
     )
     private boolean extendedcommandblocks$allowPotionEditors(ServerPlayerEntity player) {
-        return player.isCreativeLevelTwoOp() || PermissionGate.INSTANCE.hasPotionAccess(player);
+        return PermissionGate.INSTANCE.hasCommandBlockAccess(player);
     }
 }
