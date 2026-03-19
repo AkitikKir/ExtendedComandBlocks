@@ -1,6 +1,7 @@
 package com.example.extendedcommandblocks.command
 
 import com.example.extendedcommandblocks.config.CommandWhitelist
+import com.example.extendedcommandblocks.network.ModNetworking
 import com.mojang.brigadier.CommandDispatcher
 import com.mojang.brigadier.arguments.StringArgumentType
 import net.minecraft.server.command.CommandManager.argument
@@ -16,8 +17,17 @@ object WhitelistCommands {
                 .then(argument("command", StringArgumentType.word())
                     .executes { context ->
                         val raw = StringArgumentType.getString(context, "command")
-                        val added = CommandWhitelist.add(raw)
-                        context.source.sendFeedback({ Text.literal("Добавлена команда: /$added") }, true)
+                        try {
+                            val added = CommandWhitelist.add(raw)
+                            ModNetworking.syncWhitelistToAll(context.source.server)
+                            context.source.sendFeedback(
+                                { Text.translatable("message.extendedcommandblocks.command_added", "/$added") },
+                                true
+                            )
+                        } catch (ex: IllegalArgumentException) {
+                            context.source.sendError(Text.literal(ex.message ?: "Invalid command"))
+                            return@executes 0
+                        }
                         1
                     })
         )
@@ -28,8 +38,17 @@ object WhitelistCommands {
                 .then(argument("command", StringArgumentType.word())
                     .executes { context ->
                         val raw = StringArgumentType.getString(context, "command")
-                        val removed = CommandWhitelist.remove(raw)
-                        context.source.sendFeedback({ Text.literal("Удалена команда: /$removed") }, true)
+                        try {
+                            val removed = CommandWhitelist.remove(raw)
+                            ModNetworking.syncWhitelistToAll(context.source.server)
+                            context.source.sendFeedback(
+                                { Text.translatable("message.extendedcommandblocks.command_removed", "/$removed") },
+                                true
+                            )
+                        } catch (ex: IllegalArgumentException) {
+                            context.source.sendError(Text.literal(ex.message ?: "Invalid command"))
+                            return@executes 0
+                        }
                         1
                     })
         )
@@ -39,12 +58,15 @@ object WhitelistCommands {
                 .requires { it.hasPermissionLevel(4) }
                 .executes { context ->
                     val entries = CommandWhitelist.list().sorted()
-                    val message = if (entries.isEmpty()) {
-                        "Whitelist пуст"
+                    val text = if (entries.isEmpty()) {
+                        Text.translatable("message.extendedcommandblocks.whitelist_empty")
                     } else {
-                        "Whitelist: ${entries.joinToString(", ") { "/$it" }}"
+                        Text.translatable(
+                            "message.extendedcommandblocks.whitelist",
+                            entries.joinToString(", ") { "/$it" }
+                        )
                     }
-                    context.source.sendFeedback({ Text.literal(message) }, false)
+                    context.source.sendFeedback({ text }, false)
                     1
                 }
         )

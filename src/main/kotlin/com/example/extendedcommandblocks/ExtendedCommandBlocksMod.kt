@@ -3,6 +3,7 @@ package com.example.extendedcommandblocks
 import com.example.extendedcommandblocks.command.WhitelistCommands
 import com.example.extendedcommandblocks.config.CommandWhitelist
 import com.example.extendedcommandblocks.effect.ModEffects
+import com.example.extendedcommandblocks.network.ModNetworking
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry
@@ -21,6 +22,7 @@ class ExtendedCommandBlocksMod : ModInitializer {
         ModEffects.register()
         registerBrewingRecipes()
         CommandWhitelist.load()
+        ModNetworking.registerServer()
 
         CommandRegistrationCallback.EVENT.register(CommandRegistrationCallback { dispatcher, _, _ ->
             WhitelistCommands.register(dispatcher)

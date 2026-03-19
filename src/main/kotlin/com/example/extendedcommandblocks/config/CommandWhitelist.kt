@@ -26,7 +26,7 @@ object CommandWhitelist {
                 allowedRoots.clear()
                 loaded.map(::normalizeRoot).filter(String::isNotBlank).forEach(allowedRoots::add)
             }
-        } catch (ex: Exception) {
+        } catch (_: Exception) {
             allowedRoots.clear()
             save()
         }
@@ -41,7 +41,7 @@ object CommandWhitelist {
 
     fun add(command: String): String {
         val normalized = normalizeRoot(command)
-        require(normalized.isNotBlank()) { "Команда не может быть пустой" }
+        require(normalized.isNotBlank()) { "Command cannot be blank." }
         allowedRoots.add(normalized)
         save()
         return normalized
@@ -49,9 +49,9 @@ object CommandWhitelist {
 
     fun remove(command: String): String {
         val normalized = normalizeRoot(command)
-        require(normalized.isNotBlank()) { "Команда не может быть пустой" }
+        require(normalized.isNotBlank()) { "Command cannot be blank." }
         if (!allowedRoots.remove(normalized)) {
-            throw IllegalArgumentException("Команда '$normalized' не найдена в whitelist")
+            throw IllegalArgumentException("Command '$normalized' was not found in whitelist.")
         }
         save()
         return normalized

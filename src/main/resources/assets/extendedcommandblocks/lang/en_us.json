@@ -2,5 +2,15 @@
   "effect.extendedcommandblocks.command_access": "Command Block Access",
   "item.minecraft.potion.effect.extendedcommandblocks.command_access": "Command Block Access Potion",
   "item.minecraft.splash_potion.effect.extendedcommandblocks.command_access": "Splash Command Block Access Potion",
-  "item.minecraft.lingering_potion.effect.extendedcommandblocks.command_access": "Lingering Command Block Access Potion"
+  "item.minecraft.lingering_potion.effect.extendedcommandblocks.command_access": "Lingering Command Block Access Potion",
+  "message.extendedcommandblocks.need_effect_open": "You need the special effect to open command blocks.",
+  "message.extendedcommandblocks.need_effect_edit": "You need the special effect to edit command blocks.",
+  "message.extendedcommandblocks.command_denied": "This command does not exist or you do not have access.",
+  "message.extendedcommandblocks.command_added": "Added to whitelist: %s",
+  "message.extendedcommandblocks.command_removed": "Removed from whitelist: %s",
+  "message.extendedcommandblocks.whitelist_empty": "Whitelist is empty.",
+  "message.extendedcommandblocks.whitelist": "Whitelist: %s",
+  "gui.extendedcommandblocks.panel_title": "Allowed Commands",
+  "gui.extendedcommandblocks.panel_empty": "Whitelist is empty",
+  "gui.extendedcommandblocks.panel_hint": "Use /commandadd and /commanddel"
 }

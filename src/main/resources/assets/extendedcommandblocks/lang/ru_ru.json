@@ -2,5 +2,15 @@
   "effect.extendedcommandblocks.command_access": "Доступ к командным блокам",
   "item.minecraft.potion.effect.extendedcommandblocks.command_access": "Зелье доступа к командным блокам",
   "item.minecraft.splash_potion.effect.extendedcommandblocks.command_access": "Взрывное зелье доступа к командным блокам",
-  "item.minecraft.lingering_potion.effect.extendedcommandblocks.command_access": "Туманное зелье доступа к командным блокам"
+  "item.minecraft.lingering_potion.effect.extendedcommandblocks.command_access": "Туманное зелье доступа к командным блокам",
+  "message.extendedcommandblocks.need_effect_open": "Нужен специальный эффект, чтобы открыть командный блок.",
+  "message.extendedcommandblocks.need_effect_edit": "Нужен специальный эффект, чтобы редактировать командный блок.",
+  "message.extendedcommandblocks.command_denied": "Команда не существует или у вас нет доступа.",
+  "message.extendedcommandblocks.command_added": "Команда добавлена в whitelist: %s",
+  "message.extendedcommandblocks.command_removed": "Команда удалена из whitelist: %s",
+  "message.extendedcommandblocks.whitelist_empty": "Whitelist пуст.",
+  "message.extendedcommandblocks.whitelist": "Whitelist: %s",
+  "gui.extendedcommandblocks.panel_title": "Разрешённые команды",
+  "gui.extendedcommandblocks.panel_empty": "Список пока пуст",
+  "gui.extendedcommandblocks.panel_hint": "Используйте /commandadd и /commanddel"
 }

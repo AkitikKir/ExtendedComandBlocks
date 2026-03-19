@@ -32,7 +32,7 @@ public class CommandBlockBlockMixin {
             CallbackInfoReturnable<ActionResult> cir
     ) {
         if (world.isClient) {
-            // Always let client send interaction packet; server side enforces access checks.
+            // Let the client send interaction packet; access checks happen on the server.
             cir.setReturnValue(ActionResult.SUCCESS);
             return;
         }
@@ -51,7 +51,7 @@ public class CommandBlockBlockMixin {
         }
 
         if (!PermissionGate.INSTANCE.hasPotionAccess(serverPlayer)) {
-            serverPlayer.sendMessage(Text.literal("Нужен специальный эффект для доступа к командному блоку"), false);
+            serverPlayer.sendMessage(Text.translatable("message.extendedcommandblocks.need_effect_open"), false);
             cir.setReturnValue(ActionResult.FAIL);
             return;
         }

@@ -10,10 +10,14 @@
   "entrypoints": {
     "main": [
       "com.example.extendedcommandblocks.ExtendedCommandBlocksMod"
+    ],
+    "client": [
+      "com.example.extendedcommandblocks.ExtendedCommandBlocksClient"
     ]
   },
   "mixins": [
-    "extendedcommandblocks.mixins.json"
+    "extendedcommandblocks.mixins.json",
+    "extendedcommandblocks.client.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.15.0",
