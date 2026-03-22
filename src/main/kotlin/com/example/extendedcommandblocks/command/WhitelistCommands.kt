@@ -2,8 +2,11 @@ package com.example.extendedcommandblocks.command
 
 import com.example.extendedcommandblocks.config.CommandWhitelist
 import com.example.extendedcommandblocks.network.ModNetworking
+import com.example.extendedcommandblocks.vanish.VanishManager
 import com.mojang.brigadier.CommandDispatcher
+import com.mojang.brigadier.arguments.BoolArgumentType
 import com.mojang.brigadier.arguments.StringArgumentType
+import net.minecraft.command.argument.EntityArgumentType
 import net.minecraft.server.command.CommandManager.argument
 import net.minecraft.server.command.CommandManager.literal
 import net.minecraft.server.command.ServerCommandSource
@@ -70,5 +73,68 @@ object WhitelistCommands {
                     1
                 }
         )
+
+        dispatcher.register(
+            literal("vanish")
+                .requires { it.hasPermissionLevel(4) }
+                .then(argument("target", EntityArgumentType.player())
+                    .executes { context ->
+                        val target = EntityArgumentType.getPlayer(context, "target")
+                        val becomeVanished = !VanishManager.isVanished(target)
+                        setVanishState(context.source, target, becomeVanished)
+                    }
+                    .then(argument("enabled", BoolArgumentType.bool())
+                        .executes { context ->
+                            val target = EntityArgumentType.getPlayer(context, "target")
+                            val enabled = BoolArgumentType.getBool(context, "enabled")
+                            setVanishState(context.source, target, enabled)
+                        }))
+        )
+    }
+
+    private fun setVanishState(
+        source: ServerCommandSource,
+        target: net.minecraft.server.network.ServerPlayerEntity,
+        enabled: Boolean
+    ): Int {
+        val changed = VanishManager.setVanished(source.server, target, enabled)
+        if (!changed) {
+            source.sendError(
+                Text.translatable(
+                    if (enabled) {
+                        "message.extendedcommandblocks.vanish_already_enabled"
+                    } else {
+                        "message.extendedcommandblocks.vanish_already_disabled"
+                    },
+                    target.displayName
+                )
+            )
+            return 0
+        }
+
+        source.sendFeedback(
+            {
+                Text.translatable(
+                    if (enabled) {
+                        "message.extendedcommandblocks.vanish_enabled"
+                    } else {
+                        "message.extendedcommandblocks.vanish_disabled"
+                    },
+                    target.displayName
+                )
+            },
+            true
+        )
+        target.sendMessage(
+            Text.translatable(
+                if (enabled) {
+                    "message.extendedcommandblocks.vanish_self_enabled"
+                } else {
+                    "message.extendedcommandblocks.vanish_self_disabled"
+                }
+            ),
+            false
+        )
+        return 1
     }
 }

@@ -10,6 +10,13 @@
   "message.extendedcommandblocks.command_removed": "Removed from whitelist: %s",
   "message.extendedcommandblocks.whitelist_empty": "Whitelist is empty.",
   "message.extendedcommandblocks.whitelist": "Whitelist: %s",
+  "message.extendedcommandblocks.vanish_enabled": "%s is now fully hidden.",
+  "message.extendedcommandblocks.vanish_disabled": "%s is visible again.",
+  "message.extendedcommandblocks.vanish_already_enabled": "%s is already hidden.",
+  "message.extendedcommandblocks.vanish_already_disabled": "%s is already visible.",
+  "message.extendedcommandblocks.vanish_self_enabled": "You are now fully hidden from chat, player list and other players.",
+  "message.extendedcommandblocks.vanish_self_disabled": "You are visible again.",
+  "message.extendedcommandblocks.vanish_chat_blocked": "You cannot send public chat messages while fully hidden.",
   "gui.extendedcommandblocks.panel_title": "Allowed Commands",
   "gui.extendedcommandblocks.panel_empty": "Whitelist is empty",
   "gui.extendedcommandblocks.panel_hint": "Use /commandadd and /commanddel"
